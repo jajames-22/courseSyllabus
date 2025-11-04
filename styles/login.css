@@ -1,0 +1,91 @@
+:root{
+    --main-color: #930000;
+    --secondary-color: #dc2121;
+    --white-color: #ffff;
+    --dark-color: rgb(168, 168, 168);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('InterReg.ttf') 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body{
+    background: linear-gradient(135deg, rgba(217, 0, 0, 0.8), rgba(65, 0, 0, 0.8)), url("../styles/images/bg-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.mb1{
+    margin-bottom: 10px;
+}
+
+.mb2{
+    margin-bottom: 20px;
+}
+
+body > *:nth-child(2){
+    background-color: white;
+    padding: 2rem;
+    width: 400px;
+    border-radius: 10px;
+}
+
+input{
+    padding: 10px;
+    margin: 5px 0px;
+    width: 100%;
+    border: 1px solid var(--dark-color);
+    border-radius: 5px;
+}
+
+.back{
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+
+.back:hover {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 100px;
+}
+
+.l-login{
+    color: white;
+    width: 500px;
+    padding: 30px;
+}
+
+.l-login > *:nth-child(3){
+    margin-top: 20px
+}
+
+.l-login > *:nth-child(2){
+    font-size: 50px;
+}
