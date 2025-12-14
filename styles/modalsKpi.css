@@ -1,0 +1,437 @@
+:root{
+    --main-color: #b30909;
+    --secondary-color: #c21a1a;
+    --grey-color: #cecece;
+    --white-color: #ffff;
+}
+
+.modal-bg{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background:rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    position: absolute;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    animation: slideUp 0.3s ease;
+}
+
+.modal > p{
+    max-width: 400px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.con-button{
+    display: flex;
+    gap: 10px;
+}
+
+.con-button > *:nth-child(1) {
+    background-color: var(--grey-color);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+}
+
+.con-button > *:nth-child(2) {
+    background-color: var(--main-color);
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+}
+
+.con-button > *:nth-child(1):hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -3px);
+}
+
+.con-button > *:nth-child(2):hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translate(0px, -3px);
+}
+
+.con-button > *:nth-child(1):hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -3px);
+}
+
+.con-button > *:nth-child(2):hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translate(0px, -3px);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translate(0px, 10px);
+    }to{
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+.syllabus-bar{
+    padding: 20px;
+    background-color: var(--white-color);
+    min-height: auto;
+    width: 100%;
+    border-radius: 10px;
+    border-left: 10px solid var(--main-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.syllabus-bar:hover{
+    background-color: rgb(255, 242, 242);
+}
+
+.syl-details{
+    display: flex;
+    justify-content: space-between;
+}
+.progress-bar{
+    margin: 10px 0px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.step-circle{
+    background-color: var(--grey-color);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 100px;
+    z-index: 30;
+    position: relative;
+}
+.step-label1::after{
+    content: 'Instructor';
+    position: absolute;
+    top: 100%;          /* place below the circle */
+    left: 50%;          /* center horizontally */
+    transform: translateX(-50%); /* adjust centering */
+    color: black;
+    margin-top: 5px;    /* small gap below the circle */
+    font-size: 12px;    /* optional */
+    white-space: nowrap; /* prevent line breaks */
+}
+.step-label2::after{
+    content: 'Dept. Head';
+    position: absolute;
+    top: 100%;          /* place below the circle */
+    left: 50%;          /* center horizontally */
+    transform: translateX(-50%); /* adjust centering */
+    color: black;
+    margin-top: 5px;    /* small gap below the circle */
+    font-size: 12px;    /* optional */
+    white-space: nowrap; /* prevent line breaks */
+}
+.step-label3::after{
+    content: 'Dean';
+    position: absolute;
+    top: 100%;          /* place below the circle */
+    left: 50%;          /* center horizontally */
+    transform: translateX(-50%); /* adjust centering */
+    color: black;
+    margin-top: 5px;    /* small gap below the circle */
+    font-size: 12px;    /* optional */
+    white-space: nowrap; /* prevent line breaks */
+}
+.step-label4::after{
+    content: 'VP for Acads Affairs';
+    position: absolute;
+    top: 100%;          /* place below the circle */
+    left: 50%;          /* center horizontally */
+    transform: translateX(-50%); /* adjust centering */
+    color: black;
+    margin-top: 5px;    /* small gap below the circle */
+    font-size: 12px;    /* optional */
+    white-space: nowrap; /* prevent line breaks */
+}
+.step-label5::after{
+    content: 'Published';
+    position: absolute;
+    top: 100%;          /* place below the circle */
+    left: 50%;          /* center horizontally */
+    transform: translateX(-50%); /* adjust centering */
+    color: black;
+    margin-top: 5px;    /* small gap below the circle */
+    font-size: 12px;    /* optional */
+    white-space: nowrap; /* prevent line breaks */
+}
+
+.step-hov1::after{
+    content: 'Instructor';
+    position: absolute;
+    top: 100%;          
+    left: 50%;         
+    transform: translateX(-50%); 
+    color: black;
+    margin-top: 10px;    
+    font-size: 12px;   
+    white-space: nowrap;
+    z-index: 100;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+.step-hov2::after{
+    content: 'Department Head';
+    position: absolute;
+    top: 100%;          
+    left: 50%;         
+    transform: translateX(-50%); 
+    color: black;
+    margin-top: 10px;    
+    font-size: 12px;   
+    white-space: nowrap;
+    z-index: 100;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+.step-hov3::after{
+    content: 'College Dean';
+    position: absolute;
+    top: 100%;          
+    left: 50%;         
+    transform: translateX(-50%); 
+    color: black;
+    margin-top: 10px;    
+    font-size: 12px;   
+    white-space: nowrap;
+    z-index: 100;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+.step-hov4::after{
+    content: 'Vice President for Academic Affairs';
+    position: absolute;
+    top: 100%;          
+    left: 50%;         
+    transform: translateX(-50%); 
+    color: black;
+    margin-top: 10px;    
+    font-size: 12px;   
+    white-space: nowrap;
+    z-index: 100;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+.step-hov5::after{
+    content: 'Published';
+    position: absolute;
+    top: 100%;          
+    left: 50%;         
+    transform: translateX(-50%); 
+    color: black;
+    margin-top: 10px;    
+    font-size: 12px;   
+    white-space: nowrap;
+    z-index: 100;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.step-hov1:hover::after,
+.step-hov2:hover::after,
+.step-hov3:hover::after,
+.step-hov4:hover::after,
+.step-hov5:hover::after {
+    opacity: 1;
+}
+
+
+.step-circle > img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.progress-line{
+    position: absolute;
+    width: 95%;
+    height: 5px;
+    background-color: var(--grey-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.level-line{
+    background-color: var(--main-color);
+    height: 100%;
+    width: 0%;
+}
+.syllabus-bar > *:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+}
+.app-active{
+    background-color: var(--main-color);
+}
+.step-label{
+    font-size: 12px;
+    position: absolute;
+    color: black;
+    transform: translate(-50%, 0);
+}
+
+.bargraph-con{
+    overflow-x: auto;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.bargraph{
+    width: auto;
+    padding-top: 20px;
+    padding-right: 1px;
+    height: 240px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.bargraph-label{
+    display: flex;
+    flex-direction: row;
+    border-left: 2px solid transparent;
+}
+
+.bargraph-label > p {
+    margin: 5px 20px 0px 20px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.bar {
+    margin: auto 20px 0px 20px;
+    min-width: 60px;
+    background-color: rgba(179, 9, 9, 0.8);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.bar > p {
+    text-align: center;
+    color: black;
+    transform: translate(0px, -20px);
+}
+
+.dash-g{
+    width: 100%; 
+    height: auto; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dash-level {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px){
+    .dash-level{
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+}
+
+.notif-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notif-bar {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.notif-bar:hover {
+    background-color: #ffd4d4;
+}
+
+.notif-details{
+    max-width: 700px;
+}
+
+.notif-buttons{
+    gap: 10px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.notif-buttons button {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 30px;
+    background-color: var(--main-color);
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.notif-buttons button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -3px);
+    transition: all 0.2s ease;
+}
+
+.notif-buttons button:active {
+    box-shadow: none;
+    transform: translate(0px, 0px);
+}
+
+.notif-unread{
+    border-left: 10px solid var(--main-color);
+}

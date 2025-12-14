@@ -1,0 +1,85 @@
+:root{
+    --main-color: #b30909;
+    --secondary-color: #c21a1a;
+    --white-color: #ffff;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('InterReg.ttf') 
+}
+
+body{
+    padding: 10px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header > *:nth-child(2){
+    text-align: center;
+}
+
+.school-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.school-logo > img {
+    height: 100%;
+}
+
+.internalization {
+    width: 300px;
+}
+
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.date{
+    text-align: end;
+}
+
+.role{
+    text-align: center;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: auto;
+}
+
+table{
+    border: 0.5px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+    padding: 3px;
+    text-align: center;
+}
+
